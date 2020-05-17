@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/BluePlatform.png-f3cfe4cb1ad77780d602f16ac1d23e2a.stex"
+path="res://.import/BlueTile1.png-17cc0933870c909447a076415426f802.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/BluePlatform.png"
-dest_files=[ "res://.import/BluePlatform.png-f3cfe4cb1ad77780d602f16ac1d23e2a.stex" ]
+source_file="res://assets/BlueTile1.png"
+dest_files=[ "res://.import/BlueTile1.png-17cc0933870c909447a076415426f802.stex" ]
 
 [params]
 
