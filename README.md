@@ -1,4 +1,4 @@
-<h1>Switch Sides<h1>
+<h1>Switch Sides</h1>
 
 A 2D Platform game created using Godot Engine.
 
