@@ -6,8 +6,9 @@ func _physics_process(delta: float) ->void:
 	is_collide_with_deadly_object()
 
 func _input(event: InputEvent) ->void:
-	if event.is_action_pressed("switch_sides") and is_on_floor() or is_on_ceiling():
-		_speed.y *= -1
+	if event.is_action_pressed("switch_sides"):
+		if is_on_floor() or is_on_ceiling():
+			_speed.y *= -1
 
 func is_collide_with_deadly_object() -> void:
 	var collision_index = get_slide_count()
