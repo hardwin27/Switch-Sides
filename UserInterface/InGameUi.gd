@@ -17,6 +17,11 @@ func _unhandled_input(event: InputEvent) ->void:
 		self.paused = not paused
 		
 
+func _on_RetryButton_pressed():
+	PlayerData.score = 0
+	get_tree().paused = false
+	get_tree().reload_current_scene()
+
 func update_screen() -> void:
 	score_label_ceiling.text = score_label_text % PlayerData.score
 	score_label_floor.text = score_label_text % PlayerData.score
@@ -25,3 +30,5 @@ func set_paused(value: bool) -> void:
 	paused = value
 	scene_tree.paused = value
 	pause_menu.visible = value
+
+

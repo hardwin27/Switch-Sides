@@ -6,4 +6,7 @@
 margin_right = 40.0
 margin_bottom = 24.0
 custom_fonts/font = ExtResource( 1 )
-text = "TEST123"
+text = "TitleText"
+__meta__ = {
+"_edit_use_anchors_": false
+}

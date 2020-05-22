@@ -30,11 +30,69 @@ text = "Score: %s"
 
 [node name="PauseMenu" type="ColorRect" parent="."]
 visible = false
-modulate = Color( 0, 0, 0, 0.196078 )
 anchor_right = 1.0
 anchor_bottom = 1.0
+margin_left = -2.33276
+margin_top = -1.05261
+margin_right = -2.33276
+margin_bottom = -1.05261
+theme = ExtResource( 1 )
+color = Color( 0, 0, 0, 0.235294 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="PauseTitle" parent="PauseMenu" instance=ExtResource( 3 )]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -86.0
+margin_top = 100.306
+margin_right = 86.0
+margin_bottom = 161.306
+text = "PAUSE"
+align = 1
+
+[node name="Label" type="Label" parent="PauseMenu"]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -93.0
+margin_top = 177.285
+margin_right = 93.0
+margin_bottom = 201.285
+text = "Press ESC to contunie"
+align = 1
+
+[node name="Menu" type="VBoxContainer" parent="PauseMenu"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -106.5
+margin_top = -59.5
+margin_right = 106.5
+margin_bottom = 59.5
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RetryButton" type="Button" parent="PauseMenu/Menu"]
+margin_right = 213.0
+margin_bottom = 57.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "Retry"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="QuitButton" type="Button" parent="PauseMenu/Menu"]
+margin_top = 61.0
+margin_right = 213.0
+margin_bottom = 119.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "Quit"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="pressed" from="PauseMenu/Menu/RetryButton" to="." method="_on_RetryButton_pressed"]
