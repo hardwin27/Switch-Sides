@@ -45,6 +45,7 @@ pause={
 2d_physics/layer_1="Platform"
 2d_physics/layer_2="Player"
 2d_physics/layer_3="Coin"
+2d_physics/layer_4="Portal"
 
 [rendering]
 

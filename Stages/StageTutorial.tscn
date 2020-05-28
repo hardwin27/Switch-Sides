@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=2]
+[gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://assets/RedTile.png" type="Texture" id=1]
 [ext_resource path="res://assets/BlueTile1.png" type="Texture" id=2]
@@ -7,6 +7,7 @@
 [ext_resource path="res://Object/Coin.tscn" type="PackedScene" id=5]
 [ext_resource path="res://Characters/Player.tscn" type="PackedScene" id=6]
 [ext_resource path="res://UserInterface/InGameUi.tscn" type="PackedScene" id=7]
+[ext_resource path="res://Object/Portal.tscn" type="PackedScene" id=8]
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
 points = PoolVector2Array( 0, 0, 48, 0, 48, 48, 0, 48 )
@@ -187,5 +188,8 @@ position = Vector2( 9000, 456 )
 
 [node name="Coin21" parent="." instance=ExtResource( 5 )]
 position = Vector2( 9096, 456 )
+
+[node name="Portal" parent="." instance=ExtResource( 8 )]
+position = Vector2( 9408, 288 )
 
 [editable path="RedPlatform/Player"]
